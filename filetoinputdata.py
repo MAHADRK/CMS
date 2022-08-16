@@ -141,7 +141,7 @@ class Fetchbycategory(CashManagement):
     # to take cash which is added to account
     def inputcashflowdata(self, CashIN, date):
         print("input cash", CashIN, 'date', date)
-        #  Query to inset user input cash to the db
+        #  Query to inset user input cash to the data base
         with conn:
             cur.execute(''' INSERT into cashflow (CashIN,DOI) VALUES(?,?)''', (CashIN, date))
 
